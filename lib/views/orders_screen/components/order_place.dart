@@ -3,7 +3,7 @@ import 'package:emart_seller/views/widgets/text_style.dart';
 
 Widget orderPlaceDetails({title1,title2,d1,d2}) {
   return Padding(
-    padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8),
+    padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 8),
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [

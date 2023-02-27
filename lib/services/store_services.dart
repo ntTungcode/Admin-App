@@ -1,8 +1,8 @@
 import 'package:emart_seller/const/const.dart';
 
 class StoreServices {
-  static getProfile(uil) {
-    return firestore.collection(vendorsCollection).where('id', isEqualTo: uil).get();
+  static getProfile(uid) {
+    return firestore.collection(vendorsCollection).where('id', isEqualTo: uid).get();
   }
 
   static getMessages(uid) {
@@ -14,7 +14,14 @@ class StoreServices {
   static getProducts(uid) {
     return firestore.collection(productsCollection).where('vendor_id', isEqualTo: uid).snapshots();
   }
-  
+  static getChatMessages(docId) {
+    return firestore
+        .collection(chatsCollection)
+        .doc(docId)
+        .collection(messagesCollection)
+        .orderBy('created_on', descending: false)
+        .snapshots();
+  }
   // static getPopularProducts(uid){
   //   return firestore.collection(productsCollection).where('vendor_id', isEqualTo: uid).orderBy('p_wishlist'.length);
   // }

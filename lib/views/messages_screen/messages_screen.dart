@@ -39,7 +39,12 @@ class MessagesScreen extends StatelessWidget {
                     var time = intl.DateFormat("h:nma").format(t);
                     return ListTile(
                       onTap: () {
-                        Get.to(() => const ChatScreen());
+                        Get.to(() => const ChatScreen(),
+                          arguments: [
+                          data[index]['friend_name'],
+                          data[index]['toId'],
+                          ],
+                        );
                       },
                       leading: const CircleAvatar(
                           backgroundColor: purpleColor,

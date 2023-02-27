@@ -27,7 +27,7 @@ const appname = "T-Shopee Admin App",
     confirmPass = "Confirm Password",
     name = "Username",
     loginTo = "Login to your account",
-    emailHint = "nttung.code@gmail.com",
+    emailHint = "Email.......",
     passwordHint = "* * * * * *";
 
 //shop settings

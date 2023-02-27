@@ -36,7 +36,7 @@ class _OrderDetailsState extends State<OrderDetails> {
                 Get.back();
               },
               icon: const Icon(Icons.arrow_back, color: darkGrey)),
-          title: boldText(text: "Order derails", color: fontGrey, size: 16.0),
+          title: boldText(text: "Order details", color: fontGrey, size: 16.0),
         ),
         bottomNavigationBar: Visibility(
           visible: !controller.confirmed.value,
