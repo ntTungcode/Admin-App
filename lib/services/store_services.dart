@@ -22,7 +22,4 @@ class StoreServices {
         .orderBy('created_on', descending: false)
         .snapshots();
   }
-  // static getPopularProducts(uid){
-  //   return firestore.collection(productsCollection).where('vendor_id', isEqualTo: uid).orderBy('p_wishlist'.length);
-  // }
 }
